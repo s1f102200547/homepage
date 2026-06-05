@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://s1f102200547.github.io',
-  base: '/REPO',           // リポジトリ名に合わせて変更すること
+  base: '/homepage',
   vite: {
     plugins: [tailwindcss()],
   },
