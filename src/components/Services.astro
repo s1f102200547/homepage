@@ -1,0 +1,34 @@
+---
+const services = [
+  {
+    title: 'アプリ開発',
+    description:
+      'Webアプリ・モバイルアプリの設計から実装・リリースまで一貫して対応します。スタートアップの新規開発から既存システムの機能追加まで柔軟に対応。',
+  },
+  {
+    title: '導入・連携支援',
+    description:
+      'SaaS ツールや外部 API との統合・自動化を支援します。業務フローに合わせたカスタマイズで、チームの生産性向上を実現します。',
+  },
+  {
+    title: '保守・運用サポート',
+    description:
+      'リリース後の継続的な改善・バグ対応・パフォーマンス最適化を担当します。安定稼働を維持しながら、事業の成長に合わせてシステムを育てます。',
+  },
+];
+---
+
+<section id="services" class="bg-white py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">サービス</h2>
+    <p class="text-gray-500 mb-16 max-w-xl">提供できること</p>
+    <div class="grid gap-8 md:grid-cols-3">
+      {services.map((s) => (
+        <div class="bg-gray-50 rounded-xl p-8 flex flex-col gap-4">
+          <h3 class="text-xl font-semibold text-gray-900">{s.title}</h3>
+          <p class="text-gray-600 leading-relaxed text-sm">{s.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
